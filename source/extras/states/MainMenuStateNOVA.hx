@@ -87,7 +87,6 @@ class MainMenuStateNOVA extends MusicBeatState
 		#if MODS_ALLOWED
 		Paths.pushGlobalMods();
 		#end
-		WeekData.loadTheFirstEnabledMod();
 
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
