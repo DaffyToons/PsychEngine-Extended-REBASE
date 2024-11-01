@@ -13,6 +13,7 @@ import TitleState;
 	public var NoteSkin:String = 'original';
 	public var FreeplayStyle:String = 'Psych';
     public var PauseMenuStyle:String = 'Psych';
+	public var FreakyMenu:String = 'Psych';
     public var TransitionStyle:String = 'Psych';
     public var MainMenuStyle:String = '1.0';
 	public var touchmenus:Bool = #if UNUSED_TOUCHMENUS true #else false #end;
