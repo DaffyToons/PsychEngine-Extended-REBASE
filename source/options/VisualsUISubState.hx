@@ -192,6 +192,16 @@ class VisualsUISubState extends BaseOptionsMenu
 
 		changedMusic = true;
 	}
+
+	function onChangeMenuMusic()
+	{
+		FlxG.sound.playMusic(Paths.music('freakyMenu'));
+	}
+	override function destroy()
+	{
+		if(changedMusic) FlxG.sound.playMusic(Paths.music('freakyMenu'));
+		super.destroy();
+	}
 	
 	function changeIndieCrossMenus()
 	{
