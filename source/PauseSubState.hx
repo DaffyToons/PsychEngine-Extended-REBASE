@@ -263,7 +263,6 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
 
-					WeekData.loadTheFirstEnabledMod();
 					if(PlayState.isStoryMode) {
 					    CustomSwitchState.switchMenus('StoryMenu');
 					} else {
@@ -277,7 +276,6 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
 
-					WeekData.loadTheFirstEnabledMod();
 					CustomSwitchState.switchMenus('MainMenu');
 					PlayState.cancelMusicFadeTween();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
